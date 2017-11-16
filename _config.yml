@@ -1,10 +1,10 @@
 # Site settings
-title: 에고트립의 해커노트 #website title
-description: EGOTRIP's HACKERNOTE
-url: https://rkdeo1515.github.io # the base hostname & protocol for your site
+title: phb1018 #website title
+description: phb1018
+url: https://phb1018.github.io # the base hostname & protocol for your site
 baseurl: # the sub-path of your site, e.g. /blog/
 
-disqus_shortname: rkdeo1515-github-pages # leave empty if you don't want comments
+disqus_shortname: phb1018-github-pages # leave empty if you don't want comments
 google_analytics: false #if set to "true" modify the google_analytycs.html, set to false otherwise
 
 # Links settings
@@ -18,7 +18,7 @@ links:
     url:          /docs
     external:     false
   - name:         GITHUB
-    url:          http://github.com/rkdeo1515
+    url:          http://github.com/phb1018
     external:     true
 
 # Build settings
