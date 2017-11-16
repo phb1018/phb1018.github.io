@@ -1,0 +1,13 @@
+* 사용자 추가
+  useradd -m -G wheel -s /bin/bash egotrip
+  passwd egotrip
+
+* sudoer 추가
+  visudo	# wheel그룹 주석해제
+
+* dhcp 활성화
+    systemctl enable dhcpcd
+    systemctl start dhcpcd
+
+* multilib 저장소 활성화
+  pacman.conf 파일을 열어서, 아래의 내용의 주석을 해제

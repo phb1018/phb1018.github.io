@@ -1,0 +1,29 @@
+# Site settings
+title: 에고트립의 해커노트 #website title
+description: EGOTRIP's HACKERNOTE
+url: https://rkdeo1515.github.io # the base hostname & protocol for your site
+baseurl: # the sub-path of your site, e.g. /blog/
+
+disqus_shortname: rkdeo1515-github-pages # leave empty if you don't want comments
+google_analytics: false #if set to "true" modify the google_analytycs.html, set to false otherwise
+
+# Links settings
+links:
+  - name:         HOME
+    url:          /
+  - name:         About
+    url:          /about
+    external:     false
+  - name:         DOCS
+    url:          /docs
+    external:     false
+  - name:         GITHUB
+    url:          http://github.com/rkdeo1515
+    external:     true
+
+# Build settings
+markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]

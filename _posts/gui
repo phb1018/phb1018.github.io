@@ -1,0 +1,45 @@
+* xorg 설치
+  virtualbox-guest-utils (driver)
+  xorg-server ,xinit
+  cp /etc/X11/xinit/xinitrc ~/.xinitrc
+
+* openbox 설치
+  pacman -S openbox obconf menumaker oblogout obmenu
+  mkdir -p ~/.config/openbox
+  cp -r /etc/xdg/openbox/ ~/.config/openbox/
+  nano .xinitrc
+    exec openbox-session
+
+* tint2 설치
+  pacman -S tint2
+  오토스타트 등록
+  tint2 &
+
+* 배경 화면 설정
+  nitrogen 설치
+  오토스타트 등록
+  nitrogen &
+
+* ibus 설치
+  ibus ibus-hangul 설치
+  .bashrc 내용 추가
+    export GTK_IM_MODULE=ibus
+    export XMODIFIERS=@im=ibus
+    export QT_IM_MODULE=ibus
+  .xprofile 이나 .xinit 파일 내용 추가
+    ibus-daemon -drx
+
+* 설정
+  lxappearance-obconf
+
+* 유틸리티
+  leafpad - lxde default text editor
+  pcmanFM - light weight file manager
+  noto-fonts-ckj - google fonts
+  feh - image viewer and set wallpaper
+  firefox - web browser
+  lxappearance-obconf
+
+* lightDM 설치
+    pacman -S lightdm lightdm-gtk-greeter
+    nano /etc/lightdm/lightdm.config
